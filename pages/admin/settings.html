@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>Pengaturan — Admin Kantin Jujur</title>
+<link rel="stylesheet" href="../../css/variables.css">
+<link rel="stylesheet" href="../../css/global.css">
+<link rel="stylesheet" href="../../css/components.css">
+<link rel="stylesheet" href="../../css/admin.css">
+<script>document.documentElement.style.visibility='hidden'</script></head>
+<body data-page="settings" data-title="Pengaturan">
+<div class="admin-app"><aside class="admin-side" id="admin-sidebar"></aside><div class="admin-scrim" id="admin-scrim"></div>
+<div class="admin-main"><header class="admin-top" id="admin-topbar"></header>
+<main class="admin-content">
+<form id="settings-form" class="card panel" style="max-width:640px" novalidate>
+ <div class="field"><label for="name">Nama kantin</label><input id="name" name="name"></div>
+ <div class="field"><label for="location">Lokasi</label><input id="location" name="location"></div>
+ <div class="form-2"><div class="field"><label for="contact">Kontak</label><input id="contact" name="contact"></div><div class="field"><label for="minStock">Batas stok minimum</label><input id="minStock" name="minStock" type="number" min="0"></div></div>
+ <div class="field"><label for="hours">Informasi operasional</label><input id="hours" name="hours"></div>
+ <div class="form-2"><div class="field"><label for="logo">Logo (maks. 200 KB)</label><input id="logo" name="logo" type="file" accept="image/*"><img id="prev-logo" class="img-prev" alt="Logo" hidden></div>
+ <div class="field"><label for="qris">Gambar QRIS (maks. 200 KB)</label><input id="qris" name="qris" type="file" accept="image/*"><img id="prev-qris" class="img-prev" alt="QRIS" hidden></div></div>
+ <p class="err" id="set-err" role="alert"></p><button class="btn">Simpan pengaturan</button></form>
+</main></div></div>
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<script type="module" src="../../js/admin-auth.js"></script>
+<script type="module" src="../../js/admin-settings.js"></script>
+</body></html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>Katalog — Kantin Jujur</title>
+<link rel="stylesheet" href="../css/variables.css">
+<link rel="stylesheet" href="../css/global.css">
+<link rel="stylesheet" href="../css/components.css">
+<link rel="stylesheet" href="../css/navbar.css">
+<link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="../css/catalog.css">
+</head>
+<body data-base="../">
+<header id="site-header"></header>
+<main>
+<div class="container"><div class="page-head"><h1>Temukan Favoritmu</h1><p class="muted">Makanan dan minuman kantin, lengkap dengan info stok.</p></div>
+ <div class="filters"><input id="q" type="search" placeholder="Cari produk…" aria-label="Cari produk">
+  <div class="filter-row"><select id="price" aria-label="Filter harga"><option value="all">Semua harga</option><option value="low">≤ Rp 8.000</option><option value="mid">Rp 8.001–15.000</option><option value="high">&gt; Rp 15.000</option></select>
+  <select id="sort" aria-label="Urutkan"><option value="default">Urutkan</option><option value="asc">Termurah</option><option value="desc">Termahal</option></select></div>
+  <div class="chips" id="cat-chips"></div></div>
+ <div id="catalog-grid"></div></div>
+</main>
+<footer id="site-footer"></footer>
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<script type="module" src="../js/main.js"></script>
+</body></html>

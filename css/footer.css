@@ -1,0 +1,4 @@
+.site-footer{background:var(--surface);border-top:1px solid var(--border);padding:32px 0;margin-top:48px;font-size:.9rem;color:var(--text-2)}
+.footer-grid{display:grid;gap:20px}
+.site-footer strong{color:var(--text)}
+@media(min-width:720px){.footer-grid{grid-template-columns:2fr 1fr 1fr}}

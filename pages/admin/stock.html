@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>Stok — Admin Kantin Jujur</title>
+<link rel="stylesheet" href="../../css/variables.css">
+<link rel="stylesheet" href="../../css/global.css">
+<link rel="stylesheet" href="../../css/components.css">
+<link rel="stylesheet" href="../../css/admin.css">
+<script>document.documentElement.style.visibility='hidden'</script></head>
+<body data-page="stock" data-title="Stok">
+<div class="admin-app"><aside class="admin-side" id="admin-sidebar"></aside><div class="admin-scrim" id="admin-scrim"></div>
+<div class="admin-main"><header class="admin-top" id="admin-topbar"></header>
+<main class="admin-content">
+<div class="card panel"><p class="muted" id="min-info"></p><div class="table-wrap" style="margin-top:10px"><table><thead><tr><th>Produk</th><th>Stok</th><th>Indikator</th><th>Total masuk</th><th>Total keluar</th><th>Aksi</th></tr></thead><tbody id="stock-body"></tbody></table></div></div>
+<div class="card panel"><h2>Riwayat perubahan stok</h2><div class="table-wrap"><table><thead><tr><th>Waktu</th><th>Produk</th><th>Jenis</th><th>Stok</th><th>Catatan</th></tr></thead><tbody id="log-body"></tbody></table></div></div>
+<dialog id="stock-dialog"><form id="stock-form" novalidate><h2 id="stock-title"></h2><div class="field"><label for="qty" id="qty-label">Jumlah</label><input id="qty" name="qty" type="number" min="0"></div>
+ <div class="field"><label for="note">Catatan (opsional)</label><input id="note" name="note" placeholder="mis. restock dari supplier"></div><p class="err" id="stock-err" role="alert"></p>
+ <div class="dlg-actions"><button type="button" class="btn outline" id="stock-cancel">Batal</button><button class="btn">Simpan</button></div></form></dialog>
+</main></div></div>
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<script type="module" src="../../js/admin-auth.js"></script>
+<script type="module" src="../../js/admin-stock.js"></script>
+</body></html>

@@ -1,0 +1,9 @@
+.kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.kpi{padding:16px}.kpi small{color:var(--text-2)}.kpi strong{display:block;font-size:1.4rem;margin-top:2px}
+.kpi.warn strong{color:var(--warning)}
+.dash-grid{display:grid;gap:20px}
+.chart-box{position:relative;height:260px}
+.mini-list{display:grid;gap:10px;list-style:none;padding:0}
+.mini-list li{display:flex;justify-content:space-between;gap:12px;align-items:center;font-size:.92rem}
+.mini-list small{color:var(--text-2);display:block}
+@media(min-width:720px){.kpis{grid-template-columns:repeat(4,1fr)}.dash-grid{grid-template-columns:1.6fr 1fr}}

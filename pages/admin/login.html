@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>Login Admin — Kantin Jujur</title>
+<link rel="stylesheet" href="../../css/variables.css"><link rel="stylesheet" href="../../css/global.css"><link rel="stylesheet" href="../../css/components.css"><link rel="stylesheet" href="../../css/admin.css">
+</head>
+<body><main class="login-wrap"><form id="login-form" class="card login-card" novalidate>
+ <div class="side-brand" style="padding:0 0 8px"><i data-lucide="leaf"></i>Kantin Jujur</div>
+ <h1 style="font-size:1.5rem">Masuk sebagai admin</h1><p class="muted" style="margin-bottom:12px">Kelola produk, stok, dan transaksi kantin.</p>
+ <div class="field"><label for="email">Email</label><input id="email" type="email" autocomplete="username" placeholder="nama@email.com"></div>
+ <div class="field"><label for="password">Password</label><div class="pw"><input id="password" type="password" autocomplete="current-password"><button type="button" id="toggle-pw" aria-label="Tampilkan password"><i data-lucide="eye"></i></button></div></div>
+ <p class="err" id="login-err" role="alert"></p>
+ <button class="btn">Login</button>
+ <a href="../../index.html" class="muted" style="text-align:center;margin-top:10px">← Kembali ke toko</a>
+</form></main>
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<script>window.lucide && lucide.createIcons()</script>
+<script type="module" src="../../js/admin-auth.js"></script></body></html>

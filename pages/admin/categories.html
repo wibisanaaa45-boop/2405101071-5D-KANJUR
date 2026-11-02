@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>Kategori — Admin Kantin Jujur</title>
+<link rel="stylesheet" href="../../css/variables.css">
+<link rel="stylesheet" href="../../css/global.css">
+<link rel="stylesheet" href="../../css/components.css">
+<link rel="stylesheet" href="../../css/admin.css">
+<script>document.documentElement.style.visibility='hidden'</script></head>
+<body data-page="categories" data-title="Kategori">
+<div class="admin-app"><aside class="admin-side" id="admin-sidebar"></aside><div class="admin-scrim" id="admin-scrim"></div>
+<div class="admin-main"><header class="admin-top" id="admin-topbar"></header>
+<main class="admin-content">
+<div class="card panel"><div class="toolbar" style="justify-content:space-between"><p class="muted">Kelompokkan produk agar mudah dicari pembeli.</p><button class="btn" id="add-cat"><i data-lucide="plus"></i>Tambah kategori</button></div>
+ <div class="table-wrap" style="margin-top:14px"><table><thead><tr><th>Nama</th><th>Jumlah produk</th><th></th></tr></thead><tbody id="cat-body"></tbody></table></div></div>
+<dialog id="cat-dialog"><form id="cat-form" novalidate><h2 id="cat-title">Tambah kategori</h2><input type="hidden" name="cid"><div class="field"><label for="cname">Nama kategori</label><input id="cname" name="cname"></div><p class="err" id="cat-err" role="alert"></p>
+ <div class="dlg-actions"><button type="button" class="btn outline" id="cat-cancel">Batal</button><button class="btn">Simpan</button></div></form></dialog>
+</main></div></div>
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<script type="module" src="../../js/admin-auth.js"></script>
+<script type="module" src="../../js/admin-categories.js"></script>
+</body></html>

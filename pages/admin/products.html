@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>Produk — Admin Kantin Jujur</title>
+<link rel="stylesheet" href="../../css/variables.css">
+<link rel="stylesheet" href="../../css/global.css">
+<link rel="stylesheet" href="../../css/components.css">
+<link rel="stylesheet" href="../../css/admin.css">
+<script>document.documentElement.style.visibility='hidden'</script></head>
+<body data-page="products" data-title="Produk">
+<div class="admin-app"><aside class="admin-side" id="admin-sidebar"></aside><div class="admin-scrim" id="admin-scrim"></div>
+<div class="admin-main"><header class="admin-top" id="admin-topbar"></header>
+<main class="admin-content">
+<div class="card panel"><div class="toolbar"><input id="f-q" type="search" placeholder="Cari produk…" aria-label="Cari produk"><select id="f-cat" aria-label="Filter kategori"></select><button class="btn" id="add-prod"><i data-lucide="plus"></i>Tambah produk</button></div>
+ <div class="table-wrap" style="margin-top:14px"><table><thead><tr><th>Produk</th><th>Kategori</th><th>Harga</th><th>Stok</th><th>Aktif</th><th></th></tr></thead><tbody id="prod-body"></tbody></table></div></div>
+<dialog id="prod-dialog"><form id="prod-form" novalidate><h2 id="dlg-title">Tambah produk</h2><input type="hidden" name="id">
+ <div class="field"><label for="pname">Nama produk</label><input id="pname" name="pname"></div>
+ <div class="form-2"><div class="field"><label for="categoryId">Kategori</label><select id="categoryId" name="categoryId"></select></div><div class="field"><label for="emoji">Ikon (emoji)</label><input id="emoji" name="emoji" maxlength="4"></div></div>
+ <div class="form-2"><div class="field"><label for="price">Harga (Rp)</label><input id="price" name="price" type="number" min="1"></div><div class="field"><label for="stock">Stok</label><input id="stock" name="stock" type="number" min="0"></div></div>
+ <div class="field"><label for="description">Deskripsi</label><input id="description" name="description"></div>
+ <div class="field"><label for="image">Gambar (maks. 200 KB)</label><input id="image" name="image" type="file" accept="image/*"><img id="preview" class="preview" alt="Pratinjau" hidden></div>
+ <label class="field" style="display:flex;gap:8px;align-items:center"><input type="checkbox" name="active" class="switch"> Produk aktif (tampil di katalog)</label>
+ <p class="err" id="form-err" role="alert"></p>
+ <div class="dlg-actions"><button type="button" class="btn outline" id="cancel">Batal</button><button class="btn">Simpan</button></div></form></dialog>
+</main></div></div>
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<script type="module" src="../../js/admin-auth.js"></script>
+<script type="module" src="../../js/admin-products.js"></script>
+</body></html>

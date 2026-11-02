@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>Dashboard — Admin Kantin Jujur</title>
+<link rel="stylesheet" href="../../css/variables.css">
+<link rel="stylesheet" href="../../css/global.css">
+<link rel="stylesheet" href="../../css/components.css">
+<link rel="stylesheet" href="../../css/admin.css">
+<link rel="stylesheet" href="../../css/dashboard.css">
+<script>document.documentElement.style.visibility='hidden'</script></head>
+<body data-page="dashboard" data-title="Dashboard">
+<div class="admin-app"><aside class="admin-side" id="admin-sidebar"></aside><div class="admin-scrim" id="admin-scrim"></div>
+<div class="admin-main"><header class="admin-top" id="admin-topbar"></header>
+<main class="admin-content">
+<section class="kpis">
+ <div class="card kpi"><small>Penjualan hari ini</small><strong id="kpi-sales">-</strong></div>
+ <div class="card kpi"><small>Transaksi hari ini</small><strong id="kpi-orders">-</strong></div>
+ <div class="card kpi"><small>Jumlah produk</small><strong id="kpi-products">-</strong></div>
+ <div class="card kpi warn"><small>Produk hampir habis</small><strong id="kpi-low">-</strong></div></section>
+<section class="dash-grid"><div class="card panel"><h2>Penjualan 7 hari terakhir</h2><div class="chart-box"><canvas id="sales-chart"></canvas></div><p class="muted" style="font-size:.8rem;margin-top:8px">Hanya transaksi terverifikasi. Data awal adalah contoh.</p></div>
+ <div class="card panel"><h2>Ringkasan stok</h2><ul class="mini-list" id="stock-sum"></ul></div></section>
+<section class="dash-grid"><div class="card panel"><h2>Transaksi terbaru</h2><ul class="mini-list" id="recent"></ul></div>
+ <div class="card panel"><h2>Produk terlaris</h2><ul class="mini-list" id="top"></ul></div></section>
+</main></div></div>
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script type="module" src="../../js/admin-auth.js"></script>
+<script type="module" src="../../js/admin-dashboard.js"></script>
+</body></html>

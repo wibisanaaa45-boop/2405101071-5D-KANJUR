@@ -1,3 +1,9 @@
+- Nama: Muhammad Rafli Wibisana Yuan
+- NIM: 2405101071
+- Kelas: 2405101071
+- Program Studi: Teknik Informatika
+- Mata Kuliah: Pemrograman Web Dasar
+- Tahun Akademik: 2024
 # KANTIN JUJUR — Digital Self-Service Canteen (Frontend UTS)
 
 Website kantin kejujuran kampus. "Belanja Mudah, Bayar Jujur." Tahap ini **hanya frontend** (HTML5, CSS3, Vanilla JavaScript). Data disimpan di `localStorage`; **backend PHP + MySQL belum dibuat** (tahap UAS).

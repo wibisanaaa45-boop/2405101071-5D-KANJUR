@@ -1,6 +1,6 @@
 - Nama: Muhammad Rafli Wibisana Yuan
 - NIM: 2405101071
-- Kelas: 2405101071
+- Kelas: 5D
 - Program Studi: Teknik Informatika
 - Mata Kuliah: Pemrograman Web Dasar
 - Tahun Akademik: 2024
